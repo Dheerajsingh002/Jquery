@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: arial;
+        
+        }
+        #box{
+            padding: 10px;
+            border: 5px solid #000;
+            color: yellow;
+            background: pink;
+        }
+    </style>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="box" class="test">
+        <h2>Test Box2</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, vero iste debitis eius nihil explicabo quidem repellat soluta aliquam fuga delectus animi sunt nisi hic ipsa expedita sit quo? Non quaerat dolorem consequuntur sed?</p>
+    </div>
+    <script src="js/jquery.js"></script>
+        <script>
+           $(document).ready(function(){
+            $("#box").click(function(){
+                $("#box").css("background-color","green");
+            });
+            $("#box").dblclick(function(){
+                $("#box").css("background-color","orange");
+            })  
+            $("#box").contextmenu(function(){
+                $("#box").css("background-color","blue");
+            })
+            $("#box").mouseenter(function(){
+                $("#box").css("background-color","purple");
+            }) 
+            $("#box").mouseleave(function(){
+                $("#box").css("background-color","black");
+            })     
+           });
+            
+        </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>embedding JQUERY and Syntax</title>
+        <style>
+            #test1{
+                color:blue;
+            }
+            #test2{
+                color:rgb(247, 0, 255);
+            }
+            p{
+                
+                color: green;
+            }
+          
+        </style>
+        <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- <p id="myParagraph">JQUERY</p> -->
+        <div id="test1">
+            <h1>Test Box 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit fuga reiciendis, ullam dolores ad eum dolore quidem eveniet perspiciatis, facere debitis iusto praesentium nobis perferendis voluptas, nisi quam officia distinctio nulla veritatis. Cupiditate.</p>
+        </div>
+        <div id="test2">
+            <h1>Test Box 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit fuga reiciendis, ullam dolores ad eum dolore quidem eveniet perspiciatis, facere debitis iusto praesentium nobis perferendis voluptas, nisi quam officia distinctio nulla veritatis. Cupiditate.</p>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                var a=$('#test1').html();
+                console.log(a);
+            });
+            
+        </script>
+    </body>
+</html>
