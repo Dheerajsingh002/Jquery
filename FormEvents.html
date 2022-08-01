@@ -29,7 +29,6 @@
     
 </head>
 <body>
-    <!-- <div id="box" class="test"> -->
         <h2>Form Events</h2>
         <form action="sform">
             <label>Name:</label>
@@ -51,12 +50,17 @@
         <br/>
         <input type="submit">
         </form>
-        
-        
-    <!-- </div> -->
     <script src="js/jquery.js"></script>
     <script src="js/events.js"></script>
-        <script>   
+        <script>  
+         $(document).ready(function(){
+            $("#sform").submit(function(){
+                var name=$("#sname").val();
+                alert("hello"+name);
+                        });
+
+         });
+         
         </script>
 </body>
 </html>
