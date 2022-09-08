@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border:5px solid black;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vel quo quos harum in ad. Voluptate repellat voluptatibus aut ut sint quibusdam expedita molestiae quis ullam. Neque ut rerum, aspernatur vel dolor dolores molestiae saepe exercitationem libero modi unde. Totam!</p>
+    </div>
+    <button type="button" id="b1">
+        Wrapall
+    </button>
+    <button type="button" id="b2">
+        WrapInner
+    </button>
+    <script src="js/jquery.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $('#b1').click(function(){
+                $('.container').wrapAll("<b></b>");
+            })
+            $('#b2').click(function(){
+                $('p').wrapInner("<h3></h3>");
+            })
+        })
+    </script>
+    
+</body>
+</html>

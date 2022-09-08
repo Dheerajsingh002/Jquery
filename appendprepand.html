@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Prepand</title>
+    <style>
+        .container{
+            border: 5px solid black;
+            width: 100%;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis consequatur ipsum aut totam, inventore mollitia, placeat aspernatur autem nostrum dolore tempora quo dolorum porro culpa recusandae delectus laborum deserunt iusto vero doloremque in repudiandae!
+
+    </div>
+    <button type="button" id="b1">
+      Append
+    </button>
+    <button type="button" id="b2">
+        Prepand
+      </button>
+    <script src="js/jquery.js">
+
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#b1').click(function(){
+                $('.container').append("<h1>Append<h1>");
+            })
+            $('#b2').click(function(){
+                $('.container').prepend("<h1>Prepand<h1>");
+            })
+            
+        })
+    </script>
+    
+</body>
+</html>

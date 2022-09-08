@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height Width</title>
+    <style>
+        .outer{
+            border: 5px solid black;
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+
+        }
+        .inner{
+            border: 5px solid red;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            margin-top: 30px;
+
+        }
+        .inner1{
+            border: 5px solid orange;
+            margin-top: 30px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <h4>Outer</h4>
+        <div class="inner">
+            <h5>Inner</h5>
+            </div>
+        </div>
+    </div>
+    <br>
+    <button type="button" id="b1">Width</button>
+    <br>
+    <button type="button" id="b2">Height</button>
+    <br>
+    <button type="button" id="b3">Inner Height</button>
+    <button type="button" id="b4">Inner Width</button>
+    <button type="button" id="b5">outer width</button>
+    <button type="button" id="b6">outer height</button>
+    <button type="button" id="b7">outer width(true)</button>
+    <button type="button" id="b8">outer height(true)</button>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#b1').click(function(){
+                console.log($('.outer').width());
+            })
+            $('#b1').click(function(){
+                console.log($('.inner').width());
+            })
+            $('#b2').click(function(){
+                console.log($('.outer').height());
+            })
+            $('#b2').click(function(){
+                console.log($('.inner').height());
+            })
+            $('#b3').click(function(){
+                console.log($('.outer').innerHeight());
+            })
+            $('#b3').click(function(){
+                console.log($('.inner').innerHeight());
+            })
+            $('#b4').click(function(){
+                console.log($('.outer').innerWidth());
+            })
+            $('#b4').click(function(){
+                console.log($('.inner').innerWidth());
+            })
+            $('#b5').click(function(){
+                console.log($('.outer').outerWidth());
+            })
+            $('#b5').click(function(){
+                console.log($('.inner').outerWidth());
+            })
+            $('#b6').click(function(){
+                console.log($('.outer').outerHeight());
+            })
+            $('#b6').click(function(){
+                console.log($('.inner').outerHeight());
+            })
+            $('#b7').click(function(){
+                console.log($('.outer').outerHeight(true));
+            })
+            $('#b8').click(function(){
+                console.log($('.inner').outerHeight(true));
+            })
+
+        })
+    </script>
+    
+</body>
+</html>

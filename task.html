@@ -22,6 +22,7 @@
         width: 30px;
         background-color: rgb(165, 108, 42);
        }
+        
       
     </style>
 </head>
@@ -85,21 +86,21 @@
         document.getElementById("f1").style.visibility="hidden";
       }
       function hide1(){
-        // $(document).ready(function(){
-        //     $('#mini').slideUp(3000);
-        // })
         $(document).ready(function(){
-            $('#mini').fadeOut(3000);
+            $('#mini').slideUp(3000);
         })
+        // $(document).ready(function(){
+        //     $('#mini').fadeOut(3000);
+        // })
         document.getElementById("buttons").style.position="fixed";
       }
       function show1(){
-        // $(document).ready(function(){
-        //     $('#mini').slideDown(3000);
-        // })
         $(document).ready(function(){
-            $('#mini').fadeIn(3000);
+            $('#mini').slideDown(3000);
         })
+        // $(document).ready(function(){
+        //     $('#mini').fadeIn(3000);
+        // })
         
       }
       document.getElementById("f1").style.cssText="margin-left:300px;margin-top:30px"
